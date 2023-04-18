@@ -1,6 +1,11 @@
 {
     "angular_path": "C:\\Users/fr4nk/Documents/angular/angularTut/angular10",
     "fastapi_path": "C:\\Users/fr4nk/Documents/betty03",
-    "web_url":"http://localhost:4200"
-    
+    "web_url":"http://localhost:4200",
+    "database_folder":"C:\\Users\\fr4nk\\OneDrive\\Documents\\backuptest\\",
+    "database_file_extension":"txt",
+    "database_file_name":"file",
+    "backup_timeing": 3600,
+    "database_backup_folder":"C:\\Users\\fr4nk\\OneDrive\\Documents\\backuptest\\backup\\"
+        
 }
