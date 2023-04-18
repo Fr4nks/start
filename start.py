@@ -41,7 +41,7 @@ def login(app, name='FR', password='FRA'):
 
 def connect_genhire():
     try:
-        app = Application(backend="win32").connect(path=r"Z:\GHFB.exe", title="Genhire")
+        app = Application(backend="win32").connect(path=r"C:\Genhire\GHFB.exe", title="Genhire")
         app.Tfmain.set_focus()
         print('Genhire is running...')
         print('Are we logid in?')
