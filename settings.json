@@ -1,6 +1,10 @@
 {
     "angular_path": "C:\\Betty/frontend/angular10",
     "fastapi_path": "C:\\Betty/backend/betty03",
-    "web_url":"http://localhost:4200"
-    
+    "web_url":"http://localhost:4200",
+    "database_folder":"C:\\Genhire\\Data\\",
+    "database_file_extension":"FDB",
+    "database_file_name":"GENDATA",
+    "backup_timeing": 1,
+    "database_backup_folder":"C:\\Users\\fr4nk\\Backup\\"    
 }
