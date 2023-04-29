@@ -2,10 +2,11 @@
     "angular_path": "C:\\Users/fr4nk/Documents/angular/angularTut/angular10",
     "fastapi_path": "C:\\Users/fr4nk/Documents/betty03",
     "web_url":"http://localhost:4200",
-    "database_folder":"C:\\Users\\fr4nk\\OneDrive\\Documents\\backuptest\\",
-    "database_file_extension":"txt",
-    "database_file_name":"file",
+    "database_folder":"C:\\Users\\fr4nk\\OneDrive\\Desktop\\Genhire\\Data",
+    "database_file_extension":"fdb",
+    "backup_interval": 3,
+    "database_file_name":"gendata",
     "backup_timeing": 3600,
-    "database_backup_folder":"C:\\Users\\fr4nk\\OneDrive\\Documents\\backuptest\\backup\\"
-        
+    "database_backup_folder":"C:\\Users\\fr4nk\\OneDrive\\Documents\\backuptest\\backup\\",
+    "host-ip": ""
 }
