@@ -8,5 +8,5 @@
     "database_file_name":"gendata",
     "backup_timeing": 3600,
     "database_backup_folder":"C:\\Users\\fr4nk\\OneDrive\\Documents\\backuptest\\backup\\",
-    "host-ip": ""
+    "host-ip": "--host 192.168.0.113"
 }
