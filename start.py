@@ -31,7 +31,7 @@ genauto_process = subprocess.Popen(start_command, shell=True)
 
 
 fastapi_path = settings['fastapi_path']
-start_command = f'cmd /k "cd /d {fastapi_path} /env/Scripts && activate && cd /d {fastapi_path} &&  uvicorn src.main:app --reload --port 5000"'
+start_command = f'cmd /k "cd /d {fastapi_path} /env/Scripts && activate && cd /d {fastapi_path} &&  uvicorn src.main:app --port 5000"'
 fastapi_process = subprocess.Popen(start_command, shell=True)
 time.sleep(20)
 os.chdir(settings['angular_path'])
