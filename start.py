@@ -16,11 +16,11 @@ import threading
 backup = FileBackup('settings.json')
 #backup_thread = threading.Thread(target=backup.run)
 #backup_thread.start()
+start_path: str = os.path.abspath(os.path.dirname(__file__))
 
 with open('settings.json') as f:
     settings = json.load(f)
 
-start_path = "C:\\Users\\fr4nk\\OneDrive\\Desktop\\start"
 start_command = f'cmd /k "cd /d {start_path} /env/Scripts && activate && cd /d {start_path} && genauto.py"'
 genauto_process = subprocess.Popen(start_command, shell=True)
 
