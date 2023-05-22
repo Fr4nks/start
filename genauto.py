@@ -3,6 +3,7 @@ from pywinauto.application import Application
 
 def login(app, name='FR', password='FRA'):
     try:
+        
         app.TfmLogin.set_focus()
         app.TfmLogin.TBtnWinControl2.click()
         app.TwwLookupDlg.TwwDBGrid.set_focus()
@@ -18,6 +19,7 @@ def login(app, name='FR', password='FRA'):
 def connect_genhire():
     try:
         app = Application(backend="win32").connect(path=r"C:\Users\fr4nk\OneDrive\Desktop\Genhire\GHFB.exe", title="Genhire")
+        app.windows()
         app.Tfmain.set_focus()
         print('Genhire is running...')
         print('Are we logid in?')
