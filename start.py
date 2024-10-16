@@ -14,8 +14,8 @@ from backup import FileBackup
 import threading
 
 backup = FileBackup('settings.json')
-#backup_thread = threading.Thread(target=backup.run)
-#backup_thread.start()
+backup_thread = threading.Thread(target=backup.run)
+backup_thread.start()
 start_path: str = os.path.abspath(os.path.dirname(__file__))
 
 with open('settings.json') as f:
@@ -26,12 +26,12 @@ genauto_process = subprocess.Popen(start_command, shell=True)
 
 host = settings['host']
 fastapi_path = settings['fastapi_path']
-start_command = f'cmd /k "cd /d {fastapi_path} /env/Scripts && activate && cd /d {fastapi_path} &&  uvicorn src.main:app --reload --port 5000 {host}"'
+start_command = f'cmd /k "cd /d {fastapi_path} /env/Scripts && activate && cd /d {fastapi_path} &&  uvicorn src.main:app --reload --port 5000 --host {host}"'
 fastapi_process = subprocess.Popen(start_command, shell=True)
 time.sleep(20)
 os.chdir(settings['angular_path'])
-#angular_process = subprocess.Popen(f'ng serve --configuration=x300 {host}', shell=True)
-angular_process = subprocess.Popen(f'ng serve {host}', shell=True)
+angular_process = subprocess.Popen(f'ng serve --configuration=x300 --host {host}', shell=True)
+#angular_process = subprocess.Popen(f'ng serve {host}', shell=True)
 time.sleep(20)
 webbrowser.open_new(settings['web_url'])
 
