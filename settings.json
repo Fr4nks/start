@@ -1,12 +1,12 @@
 {
     "angular_path": "C:\\Betty/frontend/angular10",
     "fastapi_path": "C:\\Betty/backend/betty03",
-    "web_url":"http://192.168.1.15:4200",
+    "web_url":"http://192.168.1.9:4200",
     "database_folder":"C:\\Genhire\\Data\\",
-    "database_file_extension":"fdb",
+    "database_file_extension":"fdb", 
     "backup_interval": 3600,
     "database_file_name":"gendata",
     "backup_timeing": 3600,
     "database_backup_folder":"C:\\Users\\fr4nk\\Backup\\",
-    "host": "192.168.1.15"
+    "host": "192.168.1.9"
 }
